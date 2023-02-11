@@ -1,9 +1,18 @@
 import React from 'react';
+import { useNavigate } from 'react-router';
+
 import { Avatar, Container, Grid, Paper, TextField, Typography, Button } from '@mui/material';
 import LockIcon from '@mui/icons-material/Lock';
+
 import './Login.css';
 
 export const Login = () => {
+  const navigate = useNavigate();
+
+  function handleClick() {
+    navigate('/');
+  }
+
   return (
     <Grid className="container">
       <Container className="Login" maxWidth="xs" component={Paper} elevation={5}>
@@ -17,7 +26,7 @@ export const Login = () => {
           <form>
             <TextField fullWidth autoFocus color="primary" margin="normal" variant="outlined" label="Nickname" name="nickname" />
             <TextField fullWidth type="password" color="primary" margin="normal" variant="outlined" label="Password" />
-            <Button fullWidth variant="contained" color="primary">
+            <Button onClick={handleClick} fullWidth variant="contained" color="primary">
               Sign In
             </Button>
           </form>

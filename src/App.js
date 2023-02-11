@@ -1,18 +1,19 @@
-import { Login } from './Components/Login/Login';
 import { Route, Routes } from 'react-router-dom';
-import { Home } from '@mui/icons-material';
-import './App.css';
+import { Login } from './Components/Login/Login';
 import { Profile } from './Components/profile/Profile';
 import { Setting } from './Components/settings/Setting';
+import { Dashboard } from './Components/home/Dashboard';
+
+import './App.css';
 
 function App() {
   return (
     <div>
       <Routes>
-        <Route path="/Login" element={<Login />} />
-        <Route path="/Home" element={<Home />} />
-        <Route path="/Profile" element={<Profile />} />
-        <Route path="/Setting" element={<Setting />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/setting" element={<Setting />} />
       </Routes>
     </div>
   );
