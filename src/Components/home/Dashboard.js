@@ -1,10 +1,12 @@
 import React from 'react';
 import { Sidenav } from '../Sidenav/Sidenav';
+import { Outlet } from 'react-router-dom';
+import { Box } from '@mui/system';
 
 export const Dashboard = () => {
   return (
-    <div>
-      <Sidenav />
-    </div>
+    <>
+      <h1>dashbord</h1>
+    </>
   );
 };

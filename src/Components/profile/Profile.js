@@ -1,5 +1,5 @@
 import React from 'react';
 
 export const Profile = () => {
-  return <div>Profile</div>;
+  return <h1>Profilereeeees</h1>;
 };

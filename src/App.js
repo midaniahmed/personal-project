@@ -5,17 +5,18 @@ import { Setting } from './Components/settings/Setting';
 import { Dashboard } from './Components/home/Dashboard';
 
 import './App.css';
+import { Sidenav } from './Components/Sidenav/Sidenav';
 
 function App() {
   return (
-    <div>
-      <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="/" element={<Dashboard />} />
-        <Route path="/profile" element={<Profile />} />
+    <Routes>
+      <Route path="/" element={<Sidenav />}>
+        <Route index element={<Dashboard />} />
+        <Route path="/profile" element={<Profile />}></Route>
         <Route path="/setting" element={<Setting />} />
-      </Routes>
-    </div>
+      </Route>
+      <Route path="/login" element={<Login />} />
+    </Routes>
   );
 }
 
