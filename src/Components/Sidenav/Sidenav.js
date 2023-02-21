@@ -75,7 +75,7 @@ export function Sidenav() {
           <Divider />
           <NavItems open={open} />
         </Drawer>
-        <Box component="main" sx={{ flexGrow: 1, p: 3, backgroundColor: 'green' }}>
+        <Box component="main" sx={{ flexGrow: 1, p: 3, backgroundColor: '' }}>
           <DrawerHeader />
 
           <Outlet />

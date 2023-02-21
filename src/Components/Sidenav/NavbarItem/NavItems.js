@@ -20,12 +20,12 @@ export const NavItems = ({ open }) => {
 
   const items = [
     {
-      icon: <Person3Icon />,
+      icon: <Person3Icon style={{ color: 'crimson' }} />,
       path: '/profile',
       label: 'Profile',
     },
-    { icon: <DashboardIcon />, path: '/', label: 'Dashboard' },
-    { icon: <SettingsIcon />, path: '/setting', label: 'Setting' },
+    { icon: <DashboardIcon style={{ color: 'crimson' }} />, path: '/', label: 'Dashboard' },
+    { icon: <SettingsIcon style={{ color: 'crimson' }} />, path: '/setting', label: 'Setting' },
   ];
 
   const ListItem = ({ icon, label, open, path }) => (
@@ -47,7 +47,7 @@ export const NavItems = ({ open }) => {
         >
           {icon}
         </ListItemIcon>
-        <ListItemText primary={label} sx={{ opacity: open ? 1 : 0 }} />
+        <ListItemText primary={label} sx={{ opacity: open ? 1 : 0 }} style={{ color: 'white' }} />
       </ListItemButton>
     </Link>
   );
@@ -78,7 +78,7 @@ export const NavItems = ({ open }) => {
               justifyContent: 'center',
             }}
           >
-            <LogoutIcon />
+            <LogoutIcon style={{ color: 'crimson' }} />
           </ListItemIcon>
           <ListItemText primary="Log Out" sx={{ opacity: open ? 1 : 0 }} />
         </ListItemButton>

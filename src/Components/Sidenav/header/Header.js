@@ -32,7 +32,7 @@ export function Header({ toggle }) {
   return (
     <div>
       <CssBaseline />
-      <AppBar position="fixed" sx={{ backgroundColor: 'white', color: 'black' }}>
+      <AppBar position="fixed" sx={{ backgroundColor: '#212022', color: 'crimson' }}>
         <Toolbar>
           <IconButton color="inherit" aria-label="open drawer" onClick={() => toggle()} edge="start">
             <MenuIcon />

@@ -3,9 +3,9 @@ import { Login } from './Components/Login/Login';
 import { Profile } from './Components/profile/Profile';
 import { Setting } from './Components/settings/Setting';
 import { Dashboard } from './Components/home/Dashboard';
+import { Sidenav } from './Components/Sidenav/Sidenav';
 
 import './App.css';
-import { Sidenav } from './Components/Sidenav/Sidenav';
 
 function App() {
   return (
