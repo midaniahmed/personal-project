@@ -1,0 +1,10 @@
+.image-table {
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+}
+.user-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
